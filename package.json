@@ -1,0 +1,38 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "make:migration": "knex --knexfile lib/configs/knex_config.js migrate:make tcmhoang",
+    "migrate": "knex migrate:latest --knexfile lib/configs/knex_config.js",
+    "make:seed": "knex seed:make tcmhoang ",
+    "seeding": "knex seed:run --knexfile lib/configs/knex_config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "knex": "^2.3.0",
+    "koa": "^2.13.4",
+    "koa-basic-auth": "^4.0.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^4.0.3",
+    "koa-router": "^12.0.0",
+    "koa-session": "^6.2.0",
+    "objection": "^3.0.1",
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.2.1"
+  }
+}
