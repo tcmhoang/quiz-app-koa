@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "make:migration": "knex --knexfile lib/configs/knex_config.js migrate:make tcmhoang",
-    "migrate": "knex migrate:latest --knexfile lib/configs/knex_config.js",
+    "make:migration": "knex --knexfile lib/configs/knex_config_node.js migrate:make tcmhoang",
+    "migrate": "knex migrate:latest --knexfile lib/configs/knex_config_node.js",
     "make:seed": "knex seed:make tcmhoang ",
-    "seeding": "knex seed:run --knexfile lib/configs/knex_config.js"
+    "seeding": "knex seed:run --knexfile lib/configs/knex_config_node.js"
   },
   "keywords": [],
   "author": "",
